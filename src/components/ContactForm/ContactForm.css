@@ -1,0 +1,49 @@
+.kontakt {
+    max-width: 400px;
+    margin: 0 auto;
+    color:  rgba(0, 0, 0, 0.776);
+  }
+  
+  .kontakt form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .kontakt label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .kontakt input[type="text"],
+  .kontakt input[type="email"],
+  .kontakt textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .kontakt textarea {
+    height: 150px;
+  }
+  
+  .kontakt button {
+    background-color:  rgba(0, 0, 0, 0.776);
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .kontakt button:hover {
+    background-color: #000000;
+    color: #646cff;
+  }
+  
