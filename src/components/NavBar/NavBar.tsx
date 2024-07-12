@@ -21,11 +21,13 @@ const NavBar: React.FC = () => {
             Ai panel
           </NavLink>
         </li>
+
         <li>
           <NavLink to="/blog" className="active">
             Blogovi
           </NavLink>
         </li>
+        
         <li>
           <NavLink to="/contact" className="active">
             Kontakt

@@ -8,6 +8,7 @@ import Contact from "./pages/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
 import Fudbal from "./pages/Fudbal/Fudbal";
 import Kreiraj from "./pages/Kreiraj/Kreiraj";
+import Blog from "./pages/Blog/Blog";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={<Contact />} />
         <Route path="/fudbal" element={<Fudbal />} />
         <Route path="/kreiraj" element={<Kreiraj />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </Router>
   );
