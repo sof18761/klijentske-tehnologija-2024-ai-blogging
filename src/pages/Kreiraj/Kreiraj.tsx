@@ -35,7 +35,7 @@ const Kreiraj: React.FC = () => {
 
   return (
     <div>
-      <h2>Kreiraj novi turnir</h2>
+      <h2>Kreiraj novi blog</h2>
       <div>
         <label htmlFor="sport">Sport:</label>
         <input id="sport" data-testid="sport" type="text" value={sport} onChange={handleSportChange} />
@@ -53,7 +53,7 @@ const Kreiraj: React.FC = () => {
         <input id="lokacija" type="text" value={lokacija} onChange={handleLokacijaChange} />
       </div>
       <button onClick={handleKreirajClick}>Kreiraj</button>
-      {kreiranTurnir && <p>Uspešno ste kreirali turnir!</p>}
+      {kreiranTurnir && <p>Uspešno ste kreirali blog!</p>}
     </div>
   );
 };

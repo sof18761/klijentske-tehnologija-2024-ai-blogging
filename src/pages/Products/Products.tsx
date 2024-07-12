@@ -6,10 +6,10 @@ const Products: React.FC = () => {
   return (
     <ul>
       <Link to="/fudbal">
-        <h1>Fudbal</h1>
+        <h1>Ai panel1</h1>
       </Link>
       <Link to="/kosarka">
-        <h1>Kosarka</h1>
+        <h1>Ai panel2</h1>
       </Link>
     </ul>
   );

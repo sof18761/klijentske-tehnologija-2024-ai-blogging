@@ -32,8 +32,8 @@ const Fudbal: React.FC = () => {
 
   return (
     <div>
-      <h2>Evropsko prvenstvo 2024 u fudbalu</h2>
-      <p>Datum: 14. jun 2024. u 21:00h</p>
+      <h2>AI panel</h2>
+      <p>Datum: 14. jul 2024. u 18:00h</p>
       <p>Broj slobodnih karata: {100 - rezervisaneKarte}</p>
       {!podaciPopunjeni && (
         <div>

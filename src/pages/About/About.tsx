@@ -22,7 +22,7 @@ const ProductButton: React.FC = () => {
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
-        Pogledaj turnire
+        Pogledaj blogove
       </button>
     </Link>
   );

@@ -5,26 +5,26 @@ import { Link } from "react-router-dom";
 const Home: React.FC = () => {
   return (
     <div className="home">
-      <h1>SPORTSTER</h1>
+      <h1>AI blog</h1>
       <p>
-        Pregledajte aktuelne sportske događaje i turnire ili kreirajte nove.
+        Pregledajte aktuelne blogove ili kreirajte nove.
       </p>
       <div>
-        <h2>Aktuelni događaji i turniri</h2>
+        <h2>Aktuelni blogovi</h2>
         <ul>
           <li>
-            <Link to="/fudbal">Fudbalski turnir</Link> - 14. jun 2024. u 21:00h
+            <Link to="/fudbal">Ai panel1</Link> - 14. jul 2024. u 18:00h
           </li>
           <li>
-            <Link to="/kosarka">Košarkaški turnir</Link> - 30. jun 2027. u
+            <Link to="/kosarka">Ai panel2</Link> - 30. jul 2027. u
             15:00h
           </li>
         </ul>
       </div>
       <div>
-        <h2>Kreirajte novi događaj</h2>
+        <h2>Kreirajte novi blog</h2>
         <p>
-          Da biste kreirali novi događaj, molimo vas kliknite na dugme ispod:
+          Da biste kreirali novi blog, molimo vas kliknite na dugme ispod:
         </p>
         <Link to="/kreiraj">Kreiraj</Link>
       </div>
