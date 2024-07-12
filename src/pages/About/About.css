@@ -3,12 +3,12 @@ body, ul {
     padding: 0;
 }
 
-/* Postavljamo margin na ul elementu koji sadrži linkove */
+
 ul {
-    margin-top: 20px; /* Primer: Postavlja margin na vrhu od 20 piksela */
+    margin-top: 20px; 
 }
 
-/* Stilizujemo linkove */
+
 a {
     text-decoration: none; /* Uklanja podvlaku sa linka */
     color: #333; /* Boja teksta linka */

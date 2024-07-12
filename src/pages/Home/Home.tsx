@@ -10,7 +10,7 @@ const Home: React.FC = () => {
         Pregledajte aktuelne blogove ili kreirajte nove.
       </p>
       <div>
-        <h2>Aktuelni blogovi</h2>
+        <h2>Aktuelni blogovi koje mozete citati</h2>
         <ul>
           <li>
             <Link to="/fudbal">Ai panel1</Link> - 14. jul 2024. u 18:00h
