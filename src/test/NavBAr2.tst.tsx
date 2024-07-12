@@ -11,6 +11,6 @@ test('renders navbar with correct links', () => {
   expect(getByText('Početna')).toBeInTheDocument();
   expect(getByText('O nama')).toBeInTheDocument();
   expect(getByText("Blog")).toBeInTheDocument();
-  expect(getByText("AI Panel")).toBeInTheDocument();
+  expect(getByText("Ai panel")).toBeInTheDocument();
   expect(getByText('Kontakt')).toBeInTheDocument();
 });

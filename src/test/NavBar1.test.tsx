@@ -14,7 +14,7 @@ describe("NavBar", () => {
     expect(screen.getByText("Početna")).toBeInTheDocument();
     expect(screen.getByText("O nama")).toBeInTheDocument();
     expect(screen.getByText("Blog")).toBeInTheDocument();
-    expect(screen.getByText("AI Panel")).toBeInTheDocument();
+    expect(screen.getByText("Ai panel")).toBeInTheDocument();
     expect(screen.getByText("Kontakt")).toBeInTheDocument();
   });
 });

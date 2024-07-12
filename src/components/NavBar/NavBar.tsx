@@ -24,7 +24,7 @@ const NavBar: React.FC = () => {
 
         <li>
           <NavLink to="/blog" className="active">
-            Blogovi
+            Blog
           </NavLink>
         </li>
         
