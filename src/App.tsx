@@ -6,7 +6,7 @@ import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
 import Contact from "./pages/Contact/Contact";
 import NavBar from "./components/NavBar/NavBar";
-import Fudbal from "./pages/Fudbal/Fudbal";
+import Fudbal from "./pages/Karte/Karte";
 import Kreiraj from "./pages/Kreiraj/Kreiraj";
 import Blog from "./pages/Blog/Blog";
 import "./App.css";
