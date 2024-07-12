@@ -18,6 +18,11 @@ const NavBar: React.FC = () => {
         </li>
         <li>
           <NavLink to="/products" className="active">
+            Ai panel
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/blog" className="active">
             Blogovi
           </NavLink>
         </li>
