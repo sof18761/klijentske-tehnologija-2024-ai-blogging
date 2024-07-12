@@ -5,7 +5,7 @@ body, ul {
 
 /* Postavljamo margin na ul elementu koji sadrži linkove */
 ul {
-    margin-top: 20px; /* Primer: Postavlja margin na vrhu od 20 piksela */
+    margin-top: 80px; /* Primer: Postavlja margin na vrhu od 20 piksela */
 }
 
 /* Stilizujemo linkove */
