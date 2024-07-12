@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./ContactForm.css";
 
 const ContactForm: React.FC = () => {
+  const [message, setMessage] = useState<string>("");
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
-  const [message, setMessage] = useState<string>("");
 
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);

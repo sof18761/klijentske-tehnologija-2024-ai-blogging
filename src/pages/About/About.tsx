@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./About.css"
 
 const ProductButton: React.FC = () => {
   const [hovered, setHovered] = useState(false);
