@@ -1,31 +1,38 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import "./About.css"
+import React, { Component } from "react";
+import { AboutService } from "../../services/AboutService";
+import { Founder } from "../../services/Founder";
+import "./About.css";
 
-const ProductButton: React.FC = () => {
-  const [hovered, setHovered] = useState(false);
+interface AboutState {
+  founders: Founder[];
+}
 
-  return (
-    <Link to="/products" style={{ textDecoration: "none" }}>
-      <button
-        style={{
-          padding: "10px 15px",
-          fontSize: "16px",
-          backgroundColor: hovered ? "#213547" : "#000000",
-          color: hovered ? "#646cff" : "#fff",
-          borderRadius: "5px",
-          border: "none",
-          cursor: "pointer",
-          outline: "none",
-          transition: "background-color 0.3s, color 0.3s",
-        }}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-      >
-        Pogledaj blogove
-      </button>
-    </Link>
-  );
-};
+class About extends Component<{}, AboutState> {
+  private aboutService: AboutService;
 
-export default ProductButton;
+  constructor(props: {}) {
+    super(props);
+    this.aboutService = new AboutService();
+    this.state = {
+      founders: this.aboutService.getFounders()
+    };
+  }
+
+  render() {
+    return (
+      <div className="about" style={{ color: 'white' }}>
+        <h1>About Our Founders</h1>
+        <ul>
+          {this.state.founders.map((founder, index) => (
+            <li key={index}>
+              <h2>{founder.firstName} {founder.lastName}</h2>
+              <p>{founder.description}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
+    );
+  }
+}
+
+export default About;
