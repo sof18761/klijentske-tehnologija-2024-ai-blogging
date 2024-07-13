@@ -7,11 +7,11 @@ ul {
   
   ul li {
     margin-bottom: 20px; /* Opcionalno, ako želite da dodate razmak između linkova */
-    
-  }body, ul {
+
+ }  /*body, ul {
     margin: 0;
     padding: 0;
-}
+}*/
 
 /* Postavljamo margin na ul elementu koji sadrži linkove */
 ul {
