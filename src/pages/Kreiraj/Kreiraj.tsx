@@ -26,18 +26,18 @@ const Kreiraj: React.FC = () => {
 
   const handleKreirajClick = () => {
     if (sport && datum && vreme && lokacija) {
-      console.log("Kreiran turnir:", { sport, datum, vreme, lokacija });
+      console.log("Kreirano:", { sport, datum, vreme, lokacija });
       setKreiranTurnir(true);
     } else {
-      alert("Molimo Vas popunite sva polja pre kreiranja turnira.");
+      alert("Molimo Vas popunite sva polja pre kreiranja a.");
     }
   };
 
   return (
     <div>
-      <h2>Kreiraj novi blog</h2>
+      <h2>Napisi utisak o panelu</h2>
       <div>
-        <label htmlFor="sport">Sport:</label>
+        <label htmlFor="sport">Utisak:</label>
         <input id="sport" data-testid="sport" type="text" value={sport} onChange={handleSportChange} />
       </div>
       <div>
