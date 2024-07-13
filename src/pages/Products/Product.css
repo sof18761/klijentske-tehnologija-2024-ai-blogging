@@ -1,11 +1,21 @@
-body, ul {
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 50px; /* Ovo će pomeriti sadržaj nadole */
+  }
+  
+  ul li {
+    margin-bottom: 20px; /* Opcionalno, ako želite da dodate razmak između linkova */
+    
+  }body, ul {
     margin: 0;
     padding: 0;
 }
 
 /* Postavljamo margin na ul elementu koji sadrži linkove */
 ul {
-    margin-top: 80px; /* Primer: Postavlja margin na vrhu od 20 piksela */
+    margin-top: 20px; /* Primer: Postavlja margin na vrhu od 20 piksela */
 }
 
 /* Stilizujemo linkove */
