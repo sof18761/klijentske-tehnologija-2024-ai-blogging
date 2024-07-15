@@ -15,11 +15,12 @@ const Products: React.FC = () => {
   const products: Product[] = [
     { id: 1, name: "Ai panel1", category: "fudbal", link: "/fudbal" },
     { id: 2, name: "Ai panel2", category: "kosarka", link: "/kosarka" },
-    
+    // Dodajte više proizvoda po potrebi
   ];
 
   const handleFilterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setFilter(e.target.value.toLowerCase());
+    console.log("Filter value:", e.target.value.toLowerCase());
   };
 
   const filteredProducts = products.filter((product) =>
@@ -33,14 +34,19 @@ const Products: React.FC = () => {
         type="text"
         placeholder="Filter products"
         onChange={handleFilterChange}
-        style={{ marginBottom: "20px", padding: "5px" }}
+        style={{ marginBottom: "20px", padding: "5px", width: "200px" }}
       />
       <ul>
-        {filteredProducts.map((product) => (
-          <Link to={product.link} key={product.id}>
-            <h1>{product.name}</h1>
-          </Link>
-        ))}
+        {filteredProducts.map((product) => {
+          console.log("Rendering product:", product.name);
+          return (
+            <li key={product.id}>
+              <Link to={product.link}>
+                <h1>{product.name}</h1>
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

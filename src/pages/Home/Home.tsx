@@ -22,11 +22,11 @@ const Home: React.FC = () => {
         </ul>
       </div>
       <div>
-        <h2>Kreirajte novi blog</h2>
+        <h2>Ostavite nam Vaš utisak</h2>
         <p>
-          Da biste kreirali novi blog, molimo vas kliknite na dugme ispod:
+          Da biste kreirali novi utisak, molimo vas kliknite na dugme ispod:
         </p>
-        <Link to="/kreiraj">Kreiraj</Link>
+        <Link to="/kreiraj">Utisak</Link>
       </div>
     </div>
   );
