@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import BlogService, { BlogPost } from '../../services/BlogServices'
+import BlogService, { BlogPost } from '../../services/BlogServices';
+import "./Blog.css";
 
 interface BlogState {
   posts: BlogPost[];
@@ -53,19 +54,23 @@ class Blog extends Component<{}, BlogState> {
             value={this.state.newPostTitle}
             onChange={this.handleTitleChange}
             placeholder="Post Title"
+            style={{ color: 'white', backgroundColor: 'black' }}
           />
           <textarea
             value={this.state.newPostContent}
             onChange={this.handleContentChange}
             placeholder="Post Content"
+            style={{ color: 'white', backgroundColor: 'black' }}
+
           />
           <button onClick={this.handleAddPost}>Add Post</button>
         </div>
         <ul>
           {this.state.posts.map(post => (
             <li key={post.id}>
-              <h2>{post.title}</h2>
-              <p>{post.content}</p>
+                <h2 style={{ color: 'white' }}>{post.title}</h2>
+                <p style={{ color: 'white' }}>{post.content}</p>
+              
               <button onClick={() => this.handleRemovePost(post.id)}>Remove</button>
             </li>
           ))}
