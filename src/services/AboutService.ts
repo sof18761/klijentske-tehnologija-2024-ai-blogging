@@ -18,7 +18,7 @@ export class AboutService {
       description: "je glavni saradnik naseg bloga",
       products: [
         { id: 3, name: "AI konsultant", description: "dipl. ekonomista" },
-        { id: 4, name: "magistar ekonomskih nauka", description: "master na EKOF-u" }
+        { id: 4, name: "magistar ekonomskih nauka", description: "master na Ekonomskom fakultetu" }
       ]
     }
   ];
